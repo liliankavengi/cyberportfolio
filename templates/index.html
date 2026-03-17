@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilian Kavengi | Cybersecurity Professional & Penetration Tester</title>
+    <meta name="description" content="Portfolio of Lilian Kavengi, a Cybersecurity Professional specializing in Penetration Testing, Incident Response, and Secure Architecture. Explore my skills, experience, and certifications.">
+    <meta name="keywords" content="Lilian Kavengi, Cybersecurity, Penetration Testing, Ethical Hacking, Incident Response, Network Security, SecDevOps, Portfolio">
+    <meta name="author" content="Lilian Kavengi">
+    <link rel="canonical" href="https://liliankavengi.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://liliankavengi.com/">
+    <meta property="og:title" content="Lilian Kavengi | Cybersecurity Professional">
+    <meta property="og:description" content="Cybersecurity expert specializing in penetration testing and digital defense. View my professional portfolio and technical skills.">
+    <meta property="og:image" content="{{ url_for('static', filename='og-image.jpg') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://liliankavengi.com/">
+    <meta property="twitter:title" content="Lilian Kavengi | Cybersecurity Professional">
+    <meta property="twitter:description" content="Cybersecurity expert specializing in penetration testing and digital defense. View my professional portfolio and technical skills.">
+    <meta property="twitter:image" content="{{ url_for('static', filename='og-image.jpg') }}">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lilian Kavengi",
+      "jobTitle": "Cybersecurity Professional",
+      "url": "https://liliankavengi.com",
+      "sameAs": [
+        "https://linkedin.com/in/lilian-kavengi-35247333a",
+        "https://github.com/liliankavengi"
+      ],
+      "knowsAbout": ["Cybersecurity", "Penetration Testing", "Network Security", "Incident Response"]
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="noise"></div> <!-- Overlay for subtle noise texture -->
+
+    <nav class="glass-nav">
+        <div class="logo">LK<span class="neon-text">_</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting">sys.init("Hello, cyberpals!");</p>
+                <h1 class="glitch" data-text="Lilian Kavengi">Lilian Kavengi</h1>
+                <h2 class="typewriter-text"><span id="typewriter"></span><span class="cursor">|</span></h2>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary-btn">Initiate Handshake <i class="fas fa-arrow-right"></i></a>
+                    <a href="#skills" class="btn secondary-btn">View Protocols</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="cyber-shield">
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring delay-1"></div>
+                    <div class="core"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2><span class="neon-text">></span> ./skills.sh</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <div class="term-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="term-title">lilian@kali: ~/portfolio/skills</div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <div class="term-line"><span class="prompt">lilian@kali:~$</span> cat core_competencies.txt</div>
+                    <div class="term-output typing-output" id="skills-output"></div>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Penetration Testing</h3>
+                    <p>Vulnerability assessment, ethical hacking, and exploit development to secure systems globally.
+                    </p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="card-icon"><i class="fas fa-search"></i></div>
+                    <h3>Incident Response</h3>
+                    <p>Rapid threat containment, forensic analysis, and proactive threat hunting methodologies.</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="card-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Network Security</h3>
+                    <p>Firewall configuration, intrusion detection systems (IDS/IPS), and zero-trust architecture.</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>SecDevOps</h3>
+                    <p>Integrating security natively into CI/CD pipelines, container security, and code analysis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="exp-section">
+            <div class="section-header">
+                <h2><span class="neon-text">></span> cat experience.log</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <span class="date">July 2025 - Present</span>
+                        <h3>Junior Cybersecurity Analyst</h3>
+                        <h4>Techrise Glow Limited</h4>
+                        <p>Led incident response teams, reduced MTTR by 40%, and conducted regular red-team exercises.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <span class="date">2024 - 2025</span>
+                        <h3>Security Operations Center (SOC) L1</h3>
+                        <h4>Techrise Glow Limited</h4>
+                        <p>Analyzed multi-vector attacks, managed SIEM tools (Splunk, QRadar), and fine-tuned SOC alert
+                            thresholds.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <span class="date">Certifications</span>
+                        <h3>Industry Credentials</h3>
+                        <ul class="cert-list">
+                            <li><span>></span> CISSP (Certified Information Systems Security Professional)</li>
+                            <li><span>></span> CEH (Certified Ethical Hacker)</li>
+                            <li><span>></span> CompTIA Security+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="glass-card contact-card">
+                <h2><span class="neon-text">[</span> Establish Connection <span class="neon-text">]</span></h2>
+                <p>Ready to secure your digital assets or collaborate on robust architectures.</p>
+                <div class="contact-links">
+                    <a href="mailto:kavengililian14@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i>
+                        transmission_protocol</a>
+                    <a href="https://linkedin.com/in/lilian-kavengi-35247333a" target="_blank"
+                        class="contact-btn linkedin"><i class="fab fa-linkedin"></i> linkedin_node</a>
+                    <a href="https://github.com/liliankavengi" target="_blank" class="contact-btn github"><i
+                            class="fab fa-github"></i> github_repo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Lilian Kavengi. SECURE_CONNECTION_ESTABLISHED.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
