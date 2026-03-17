@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "app.py": {
-      "runtime": "@vercel/python"
+      "runtime": "python3.9"
     }
   },
   "rewrites": [
@@ -15,6 +15,7 @@
       "destination": "app.py"
     }
   ],
+
   "headers": [
     {
       "source": "/(.*)",
